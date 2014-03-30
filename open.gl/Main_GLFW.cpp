@@ -16,10 +16,12 @@ int main_GLFW()
 
 	glfwMakeContextCurrent(window);
 
-	initGLEW();
+	initOpenGLProgram();
 
 	while(!glfwWindowShouldClose(window))
 	{
+		drawTriangle();
+
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 

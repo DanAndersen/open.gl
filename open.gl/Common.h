@@ -1,1 +1,2 @@
-void initGLEW();
+void initOpenGLProgram();
+void drawTriangle();

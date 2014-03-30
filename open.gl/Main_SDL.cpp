@@ -14,7 +14,7 @@ int main_SDL(int argc, char *argv[])
 
 	SDL_GLContext context = SDL_GL_CreateContext(window);
 
-	initGLEW();
+	initOpenGLProgram();
 
 	SDL_Event windowEvent;
 	while (true)
@@ -32,6 +32,8 @@ int main_SDL(int argc, char *argv[])
 				break;
 			}
 		}
+
+		drawTriangle();
 
 		SDL_GL_SwapWindow(window);
 	}

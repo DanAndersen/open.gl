@@ -5,7 +5,7 @@ int main_SFML()
 {
 	sf::Window window(sf::VideoMode(800, 600), "OpenGL - SFML", sf::Style::Close);
 
-	initGLEW();
+	initOpenGLProgram();
 
 	bool running = true;
 	while (running)
@@ -26,6 +26,8 @@ int main_SFML()
 				break;
 			}
 		}
+
+		drawTriangle();
 
 		window.display();
 	}
