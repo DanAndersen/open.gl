@@ -1,0 +1,1 @@
+int main_SDL(int argc, char *argv[]);
